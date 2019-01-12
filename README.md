@@ -5,8 +5,13 @@ Project code for Udacity's AI Programming with Python Nanodegree program. In thi
 
 ##
 
-In my version of the project, I created two classes, one including all functions to build a pytorch neural network (deeplearning.py), and another one including all functions to trigger inferences (deeplearninginfer.py)
-There are then two associated files (respectively train.py & predict.py) to instantiate objects from each of the two classes and to do the job
+In my version of the project, I created two classes :
+- one including all functions to build a pytorch neural network (deeplearning.py)
+- one including all functions to trigger inferences (deeplearninginfer.py)
+
+There are two associated files to instantiate objects from each of the two classes and to do the job
+- train.py
+- predict.py
 
 ```shell
 usage: train.py [-h] [--gpu] [--save_dir SAVE_DIR] [--arch ARCH]
