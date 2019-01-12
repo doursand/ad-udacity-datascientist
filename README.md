@@ -10,50 +10,7 @@ usage: train.py [-h] [--gpu] [--save_dir SAVE_DIR] [--arch ARCH]
                 [--epochs EPOCHS] [--version]
                 data_directory
 
-train neural network
-
-positional arguments:
-  data_directory        provide the directory where all images are stored,
-                        split by train, valid and test folders
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --gpu                 set this option to enable the gpu support. By default
-                        training is performed on cpu
-  --save_dir SAVE_DIR   set the save directory for the checkpoint. If not
-                        specified then local directory
-  --arch ARCH           provide the selected pretrained model architecture. If
-                        not specified then vgg16
-  --learning_rate LEARNING_RATE
-                        provide the learning rate for the training. If not
-                        specified then 0.001
-  --hidden_units HIDDEN_UNITS
-                        provide the amount of neurons in the hidden layer. If
-                        not specified then 4096
-  --epochs EPOCHS       provide number of epochs for the training. If not
-                        specified then 10
-  --version             show program's version number and exit
-  
-  
-  usage: predict.py [-h] [--gpu] [--top_k TOP_K]
+ 
+usage: predict.py [-h] [--gpu] [--top_k TOP_K]
                   [--category_names CATEGORY_NAMES] [--version]
                   image_path checkpoint_path
-
-make inference using pre saved neural network
-
-positional arguments:
-  image_path            provide the path to the image for which we want the
-                        inference
-  checkpoint_path       provide the path to the checkpoint of the saved
-                        trained model
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --gpu                 set this option to enable the gpu support. By default
-                        training is performed on cpu
-  --top_k TOP_K         provide the top k probabilities returned by the model.
-                        If not specified then 3
-  --category_names CATEGORY_NAMES
-                        provide the mapping of categories to real names. If
-                        not specified then set to cat_to_name.json
-  --version             show program's version number and exit
